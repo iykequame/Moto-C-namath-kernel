@@ -11,6 +11,6 @@ export CROSS_COMPILE=~/toolchain/prebuilts-gcc-linux-x86-arm-cit-arm-eabi-4.8/bi
 export ARCH=arm
 
 #Defconfig for Moto C
-make O=output ARCH=arm wt6737m_35_n_defconfig
+make -C O=output ARCH=arm wt6737m_35_n_defconfig
 
 make -j4 -C ARCH=arm O=output
